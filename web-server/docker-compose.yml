@@ -1,0 +1,9 @@
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: #conectar el docker con el sistema de archivos
+      - .:/app
+    ports:
+      - '80:80'
